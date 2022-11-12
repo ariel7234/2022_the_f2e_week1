@@ -1,0 +1,64 @@
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 0;
+  border: none;
+  background-color: #ffffff;
+  color: $primary;
+
+  &:active {
+    background-color: $secondary;
+  }
+  &:disabled {
+    background-color: $light;
+    color: #ffffff;
+  }
+}
+
+.btn-sm {
+  font-size: $h7-font-size;
+
+  &:hover {
+    color: $primary;
+    box-shadow: -8px -7px $tertiary;
+  }
+}
+.btn-md {
+  font-size: $h6-font-size;
+  padding: 4px 22px;
+
+  &:hover {
+    color: $primary;
+    box-shadow: -8px -8px $tertiary;
+  }
+}
+
+.btn-lg {
+  font-size: $h4-font-size;
+  padding: 7px 12px;
+  &:hover {
+    color: $primary;
+    box-shadow: -8px -8px $tertiary;
+  }
+}
+
+.btn-xl {
+  font-size: $h1-font-size;
+  line-height: 84px;
+  padding-top: 28px;
+  // padding-bottom: 28px;
+  padding: 28px 517px;
+
+  &:hover {
+    color: $primary;
+    box-shadow: -12px -11px $tertiary;
+  }
+}
