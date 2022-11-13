@@ -12635,6 +12635,10 @@ a {
   color: white;
 }
 
+.text-shadow {
+  text-shadow: 0 0 3px #3C0C00, -3px -3px 0 #3C0C00, 0 -3px 0 #3C0C00, -3px 0 0 #3C0C00;
+}
+
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -12748,12 +12752,6 @@ a {
   width: 980px;
   height: 570px;
   background-color: #B82A06;
-}
-
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=all.css.map */
