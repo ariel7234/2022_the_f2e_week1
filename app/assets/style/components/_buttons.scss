@@ -25,7 +25,7 @@
 
 .btn-sm {
   font-size: $h7-font-size;
-
+  width: 104px;
   &:hover {
     color: $primary;
     box-shadow: -8px -7px $tertiary;
@@ -34,7 +34,7 @@
 .btn-md {
   font-size: $h6-font-size;
   padding: 4px 22px;
-
+  width: 148px;
   &:hover {
     color: $primary;
     box-shadow: -8px -8px $tertiary;
@@ -44,6 +44,7 @@
 .btn-lg {
   font-size: $h4-font-size;
   padding: 7px 12px;
+  width: 307px;
   &:hover {
     color: $primary;
     box-shadow: -8px -8px $tertiary;
@@ -53,10 +54,10 @@
 .btn-xl {
   font-size: $h1-font-size;
   line-height: 84px;
-  padding-top: 28px;
+  // padding-top: 28px;
   // padding-bottom: 28px;
   padding: 28px 517px;
-
+  width: 1370px;
   &:hover {
     color: $primary;
     box-shadow: -12px -11px $tertiary;
