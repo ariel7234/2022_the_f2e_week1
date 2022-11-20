@@ -1,6 +1,12 @@
+# gulp
 public
-node_modules
 .publish
 dist
+
+# npm
+node_modules
+package-lock.json
+
+# sys
 .vscode
 .DS_Store
