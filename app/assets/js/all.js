@@ -39,4 +39,26 @@ gsap.to(".typing2", {
   },
 });
 
-gsap.from(".ami-block", { y: 100, opacity: 0, duration: 1, delay: 1 });
+const blockArray = document.querySelector(".ami-block");
+gsap.utils.toArray(".animation-wrapper").forEach((element) => {
+  if (element.classList.contains("from-bottom")) {
+    hide(element);
+
+    ScrollTrigger.create({
+      trigger: element,
+      trigger: blockArray,
+      markers: true,
+      onEnter: function () {
+        animated(element);
+      },
+      onEnterBack: function () {
+        animated(element);
+      },
+      onLeave: function () {
+        hide(element);
+      },
+    });
+  }
+});
+
+gsap.from(".ami-block", { y: 100, opacity: 0, duration: 1, delay: 0.2 });
